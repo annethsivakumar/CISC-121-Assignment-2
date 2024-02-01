@@ -1,0 +1,204 @@
+###### The following test cases for question 1 and question 2 were chosen because it covers all the different possibilities the user can perform with the program. ######
+
+a1_q1.py - Test 1:
+# User chooses not to participate in the program
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: no
+
+You choose not to participate.
+
+
+a1_q1.py - Test 2:
+# User participates in the program, but enters a string for a number
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: ten
+
+ERROR: ENTERED VALUE WAS NOT AN INTEGER!
+
+
+a1_q1.py - Test 3:
+# User enters one odd number
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 3
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: no
+
+Your chosen numbers: (3,)
+Conditions Met: True
+
+
+a1_q1.py - Test 4:
+# User enters one even number
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 2
+
+Would you like to enter anothor number?
+Enter 'yes' to continue or any other key to quit: no
+
+Your chosen numbers: (2,)
+Conditions Met: True
+
+
+a1_q1.py - Test 5:
+# User enters multiple even numbers
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 2
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 10
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 20
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 44
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 1000
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: no
+
+Your chosen numbers: (2, 10, 20, 44, 1000)
+Conditions Met: True
+
+
+a1_q1.py - Test 6:
+# User enters multiple odd numbers
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 1
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 3
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 9
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 33
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: no
+
+Your chosen numbers: (1, 3, 9, 33)
+Conditions Met: True
+
+
+a1_q1.py - Test 7:
+# User random number numbers
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 1
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 2
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 8
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 13
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 89
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: no
+
+Your chosen numbers: (1, 2, 8, 13, 89)
+Conditions Met: False
+
+
+a1_q1.py - Test 8:
+# User random numbers, then enters a string instead of an integer
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 1
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 2
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: 90
+
+Would you like to enter another number?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter another number: eleven
+
+ERROR: ENTERED VALUE WAS NOT AN INTEGER!
+
+
+a1_q1.py - Test 9:
+# User attempts to enter a float value
+OUTPUT:
+Would you like to participate in this activity?
+Enter 'yes' to continue or any other key to quit: yes
+Please enter an integer into the function: 10.25
+
+ERROR: ENTERED VALUE WAS NOT AN INTEGER!
+
+
+
+
+
+a2_q2.py - Test 1:
+# Test output of friendship_degree()
+OUPUT:
+Michael has 3 friends: (Amy, John, Max)
+Amy has 3 friends: (Michael, Anna, Mia)
+Anna has 4 friends: (Max, Aiden, Amy, Alice)
+Max has 3 friends: (Anna, Aiden, Michael)
+Aiden has 3 friends: (Anna, Max, Mia)
+John has 2 friends: (Michael, Alice)
+Alice has 2 friends: (John, Anna)
+Mia has 2 friends: (Amy, Aiden)
+
+a2_q2.py - Test 2:
+# Test functions.all_my_friends() on Max
+OUPUT:
+Max's friends:  ['Anna', 'Aiden', 'Michael']
+
+
+a2_q2.py - Test 3:
+# Test functions.all_my_friends() on Alice
+OUPUT:
+Alice's friends:  ['John', 'Anna']
+
+
+a2_q2.py - Test 4:
+# Test functions.all_my_friends() on non-existent name
+OUPUT:
+Anneth's friends:  ERROR: NAME NOT FOUND!
+
+
+a2_q2.py - Test 5:
+# Test functions.all_my_friends() on misspelt name
+OUPUT:
+Micheal's friends:  ERROR: NAME NOT FOUND!
